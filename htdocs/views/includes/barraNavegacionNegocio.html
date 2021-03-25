@@ -1,0 +1,29 @@
+	<!-- BARRA DE NAVEGACIÓN DEL ADMINISTRADOR -->	
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="inicial">
+			<mark class="text-primary bg-dark">DYNAMENU.</mark> 
+			<?php
+			echo $_SESSION['negocio']['NEG_NombreComercial'];
+			?>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuLateral" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" alt="Menu del sistema" aria-label="Alternar navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto mb-2 mb-md-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"> </span><?php echo $_SESSION['usuario']['USU_Nombre']." ".$_SESSION['usuario']['USU_Apellidos'];?>
+					</a>
+					<div class="dropdown-menu" id="MenuPerfil">
+						<a class="dropdown-item" href="perfil">Mi perfil</a>
+						<a class="dropdown-item" href="desconectar.php">Desconectar</a>
+					</div>
+				</li>	
+				</ul>
+			</div>
+		</nav>

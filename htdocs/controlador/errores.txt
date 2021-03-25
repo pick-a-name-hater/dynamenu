@@ -1,0 +1,2 @@
+DELETE FROM mesas WHERE MES_ID = '3' and MES_SAL_ID='3';
+Filas afectadas: 1

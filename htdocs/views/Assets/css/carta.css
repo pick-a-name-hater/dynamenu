@@ -1,0 +1,37 @@
+.negocio {
+  font-weight: 900;
+  text-align: center;
+  margin: 50;
+}
+
+.carta {
+  font-weight: 800;
+  font-family: Helvetica;
+  text-align: center;
+  color: #aa0512;
+}
+
+.seccion {
+  font-weight: bold;
+  font-family: Helvetica;
+  color: #aa0512;
+}
+
+.plato{
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.descripcion{
+  font-weight: lighter;
+  font-family: Helvetica;
+}
+
+.precio{
+  text-align: right;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../Images/Fondo7.jpg");
+}
